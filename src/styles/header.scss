@@ -34,5 +34,12 @@ nav{
         background-color: $color1;
         cursor: pointer;
         color: $color6;
+        letter-spacing: 1px;
+        font-weight: 500;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $color6;
+            color: $color4;
+        }
     }
 }
