@@ -8,7 +8,7 @@ const Header = () => {
   )
 }
 
-const NavContent = ()=>{
+const NavContent = ()=>(
     <>
       <h2>Bhaskar.</h2>
       <div>
@@ -24,7 +24,7 @@ const NavContent = ()=>{
       </a>
     
     </>
-}
+)
 
 
 export default Header
