@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import "../styles/home.scss"
 import {motion} from "framer-motion"
 import  Typewriter  from 'typewriter-effect'
@@ -8,6 +8,8 @@ import me from "../assets/idimg.png"
 
 
 const Home = () => {
+
+    const clientCount = useRef(null)
 
     const animations = {
         h1:{
@@ -58,7 +60,7 @@ const Home = () => {
                     </div>
 
                     <article>
-                        <p>+ <span>100</span></p>
+                        <p>+ <motion.span ref={clientCount}>100</motion.span></p>
                         <span>Clients Worldwide</span>
                     </article>
 
