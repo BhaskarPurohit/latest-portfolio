@@ -7,6 +7,11 @@
         width: 100%;
 
         &:first-of-type{
+            padding-left:  13.33vmax;
+
+            >div{
+                border-top: 1px solid #16161622;
+            }
 
         }
 
@@ -39,10 +44,16 @@
             }
         }
 
-        >svg{
-            position: absolute;
-            font-size: 4rem;
-            color: #292b46;
-        }
+        
+    }
+
+    >svg{
+        position: absolute;
+        font-size: 4rem;
+        color: #292b46;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+        animation: animateSvg 0.7s infinite linear alternate;
     }
 }
