@@ -32,6 +32,16 @@
                     > a{
                         &:first-of-type{
                             background-color: #f26440;
+                            color: #fef2f2;
+                            padding: 1rem 2.5rem;
+                            transition: all 0.3s;
+                            &:hover{
+                                background-color: #ad4126;
+
+                            }
+                        }
+                        &:last-of-type{
+                            font: 600 1.2rem  "Open Sans", sans-serif;
                         }
                     }
                 }
