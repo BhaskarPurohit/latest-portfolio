@@ -24,15 +24,25 @@
                 height: 40vmax;
                 background-color: #f26440;
                 position: absolute;
+                z-index: -1;
+                border-radius: 50%;
             }
             
             
             >img{
-                width: 40vmax;
+                width: 30vmax;
+                height: 50vmax;
                 
-                object-fit: contain;
+                
+                object-fit: cover;
 
             }
+        }
+
+        >svg{
+            position: absolute;
+            font-size: 4rem;
+            color: #292b46;
         }
     }
 }

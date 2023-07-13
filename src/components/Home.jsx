@@ -2,8 +2,8 @@ import React from 'react'
 import "../styles/home.scss"
 import {motion} from "framer-motion"
 import  Typewriter  from 'typewriter-effect'
-import {BsArrowUpRight} from "react-icons/bs"
-import me from "../assets/me-hd.png"
+import {BsArrowUpRight, BsChevronDown} from "react-icons/bs"
+import me from "../assets/idimg.png"
 
 
 
@@ -78,6 +78,7 @@ const Home = () => {
         <section>
             <img src={me} alt="Bhaskar" />
         </section>
+        <BsChevronDown/>
     </div>
   )
 }
