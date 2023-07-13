@@ -11,6 +11,30 @@
 
             >div{
                 border-top: 1px solid #16161622;
+                height: 100%;
+                padding-top: 6rem;
+                >h1{
+                    font: 900 4rem "Roboto", sans-serif;
+                }
+
+                .typewriterpara{
+                    margin: 20px 0;
+                    height: 20px;
+                    letter-spacing: 5px;
+                }
+
+                > div{
+                    display: flex;
+                    margin: 5rem 0;
+                    width: 70%;
+                    gap: 4rem;
+                    align-items: center;
+                    > a{
+                        &:first-of-type{
+                            background-color: #f26440;
+                        }
+                    }
+                }
             }
 
         }
