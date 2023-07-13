@@ -17,6 +17,14 @@
             justify-content: flex-end;
             align-items: center;
             overflow-x: hidden;
+
+            &::after{
+                content:"";
+                width: 40vmax;
+                height: 40vmax;
+                background-color: #f26440;
+                position: absolute;
+            }
             
             
             >img{
