@@ -4,12 +4,29 @@ import {motion} from "framer-motion"
 import  Typewriter  from 'typewriter-effect'
 import {BsArrowUpRight, BsChevronDown} from "react-icons/bs"
 import me from "../assets/idimg.png"
+import { animate } from 'framer-motion'
 
 
 
 const Home = () => {
 
     const clientCount = useRef(null)
+    const projectCount = useRef(null)
+
+    const animationClientsCount = ()=>{
+        animate(0,100, {
+            duration: 1,
+            onUpdate: (v)=> clientCount.current.textContent = v.toFixed()
+        })
+
+    }
+
+    const animationsProjectCount = ()=>{
+        animate(0, 20, {
+            duration: 1,
+            onUpdate: (v)=> (projectCount.current.textContent = v.toFixed()),
+        })
+    }
 
     const animations = {
         h1:{
@@ -60,13 +77,13 @@ const Home = () => {
                     </div>
 
                     <article>
-                        <p>+ <motion.span ref={clientCount}>100</motion.span></p>
+                        <p>+ <motion.span whileInView={animationClientsCount} ref={clientCount}>100</motion.span></p>
                         <span>Clients Worldwide</span>
                     </article>
 
                     <aside>
                         <article>
-                            <p>+<span>500</span></p>
+                            <p>+<motion.span ref={projectCount} whileInView={animationsProjectCount}>20</motion.span></p>
                             <span>Projects Made</span>
                         </article>
 
